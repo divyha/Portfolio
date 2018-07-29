@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+<body>
+<div class="background">
+<div class="nav">
+	<a class="a active"  href="#">HOME</a>
+	<a class="b"  href="#">ABOUT ME</a>
+	<a class="c"  href="#">GALLERY</a>
+	<a class="d"  href="#">CONTACT US</a>
+	
+	
+</div> 
+
+<div class="content">
+	<div class="home">
+	<h1> I am Divy Hasija</h1>
+	<h2> Software Engineer</h2>
+	</div>
+	
+
+
+</div>
+
+<div class="aboutme">
+	
+		Project Undertaken: Applicant Tracking System<br>
+		IDE used: Netbeans<br>
+		Language: Java<br>
+		Database: MySQL<br>
+		Description:<br>
+					Applicant Tracking System is the desktop application developed through Netbeans in java programming Language.<br>
+					It is a CRUD application for a staffing company for managing their database in an appropriate manner and gene-<br>
+					rating a report which is achieved by Jasper iReport.This Application enables the electronic handling of recru-<br>
+					itment needs. It is an application for an enterprise or small business level, depending on the needs of the <br>
+					company. It is basically designed for maintaining the records of the sourced candidates. In many cases we can<br>
+					filter applications automatically based on given criteria such as keywords, Position,Clients and Location</p>
+		
+		
+</div>
+
+<div class="gallery">
+	<div class="image">
+	<img src="./images/2.jpeg">
+</div>
+
+</div>
+
+<div class="contactus">
+	<form action="" method="post">
+		<input type="text" name="" class="inputtext" value="First Name">
+		<input type="text" name="" class="inputtext" value="Last Name">
+		<input type="text" name="" class="inputtext" value="Your Email">
+		<textarea cols="4" rows="6" class="inputmessage">Your Message..</textarea>
+		<input type="button" name="" class="submitbutton" value="Submit">
+		</form>
+</div>
+
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a').click(function(){
+			//alert("click");
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+			
+			});
+			
+			var $a= $('.a');
+			$b= $('.b');
+			$c= $('.c');
+			$d= $('.d');
+			$home= $('.home');
+			$aboutme=$('.aboutme');
+			$gallery= $('.gallery');
+			$contactus= $('.contactus');
+			
+			$a.click(function(){
+			$home.fadeIn();
+			$aboutme.fadeOut();
+			$gallery.fadeOut();
+			$contactus.fadeOut();
+			});
+			
+			$b.click(function(){
+			$aboutme.fadeIn();
+			$home.fadeOut();
+			$contactus.fadeOut();
+			$gallery.fadeOut();
+			});
+			
+			$c.click(function(){
+			$gallery.fadeIn();
+			$home.fadeOut();
+			$contactus.fadeOut();
+			$aboutme.fadeOut();
+			});
+			
+			$d.click(function(){
+			$contactus.fadeIn();
+			$home.fadeOut();
+			$aboutme.fadeOut();
+			$gallery.fadeOut();
+			});
+			
+			
+			
+		});
+		
+		
+</script>
+
+
+
+</body>
+</head>
+</html>
